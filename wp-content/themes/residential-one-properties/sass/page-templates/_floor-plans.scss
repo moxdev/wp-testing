@@ -1,0 +1,150 @@
+.page-template-page-floor-plans {
+	#article-wrapper {
+		background-color: $color__background-alt;
+		max-width: none;
+	}
+
+	#floor-plan-listing {
+		padding-bottom: 20px;
+		padding-top: 20px;
+		font-family: ralewaymedium;
+
+		#plan-nav {
+			margin: 0 0 3em;
+			padding: 0;
+			list-style: none;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display:flex;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-ms-flex-pack: center;
+			justify-content:center;
+
+			li {
+				margin-right: 1em;
+			}
+
+			a {
+				color: $floorplan__link-a;
+				text-decoration: none;
+
+				&:hover, &.active {
+					text-decoration: underline;
+				}
+
+				&.active {
+					color: $floorplan__link-active;
+				}
+			}
+		}
+
+		.floor-plan {
+			text-align: center;
+			display: none;
+			transition:opacity .25s;
+			opacity: 0;
+			color: $floorplan__grey;
+			font-family: ralewaylight;
+
+			&.active {
+				opacity:1;
+			}
+
+			span {
+				display: block;
+			}
+
+			h3 {
+				font-family: ralewaymedium;
+				color: $color__brand-4;
+			}
+			.sq-ft {
+				color: $floorplan__link-a;
+
+			}
+
+			.plan-img {
+				margin-top: 1.5em;
+				display: block;
+				width: 100%;
+			}
+		}
+
+		@include respond-to(medium) {
+			padding-left:20px;
+			padding-right:20px;
+		}
+	}
+
+	@include respond-to(medium) {
+		.flex {
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display:flex;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			-webkit-flex-wrap: nowrap;
+			-ms-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+
+			.flex-item {
+				-ms-flex: 1 1 50%;
+				flex: 1 1 50%;
+			}
+
+			#floor-plan-listing, #article-wrapper {
+				padding:0;
+			}
+
+			#floor-plan-listing {
+				-ms-flex-order:1;
+				order:1;
+
+				& > div {
+					padding:30px;
+					float: right;
+					max-width: 530px;
+				}
+			}
+
+			#article-wrapper {
+				-ms-flex-order:5;
+				order:5;
+
+				article {
+					padding-left: 30px;
+					padding-right: 30px;
+					float: left;
+					max-width: 530px;
+				}
+			}
+		}
+	}
+
+	@include respond-to(large) {
+		.flex {
+			#floor-plan-listing {
+
+				& > div {
+					padding:30px 60px;
+					max-width: 710px;
+				}
+			}
+
+			#article-wrapper {
+
+				article {
+					padding-left: 60px;
+					padding-right: 60px;
+					max-width: 710px;
+				}
+			}
+		}
+	}
+}

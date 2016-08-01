@@ -1,0 +1,51 @@
+$color__brand-1: rgb(227, 227, 227); // LIGHT GRAY MASTHEADER
+$color__brand-2: #8DC63F; // LIGHT GREEN
+$color__brand-3: #00853e; // MEDIUM GREEN
+$color__brand-4: #144733; // DARK GREEN
+$color__brand-2-tinted: #E5F2D3; // DRILL PAGES TINTED GREEN
+
+
+$color__background-body: $color__brand-2;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__background-alt: $color__brand-2-tinted;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__text-main: #000;
+$color__text-alt: #575757;
+
+// Links
+$color__link_green: $color__brand-4;
+$color__link: $color__brand-4;
+$color__link-visited: #000;
+$color__link-hover: #000;
+
+// Floor Plans
+$floorplan__grey: #6d6e70;
+$floorplan__link-a: $floorplan__grey;
+$floorplan__link-active: $color__brand-4;
+$floorplan__link-hover: #000;
+
+// Buttons
+$color__background-button: $color__brand-3;
+$color__border-button: $color__brand-4;
+$color__border-button-hover: $color__brand-4;
+$color__border-button-focus: $color__brand-4;
+$color__border-input: $color__brand-4;
+$color__border-abbr: $color__brand-4;
+
+
+// Custom Colors
+//$color__brand-: rgb(0, 133, 63); // GREEN
+//$color__brand-: rgb(141, 198, 63); // BEIGE
+$white: #ffffff; //White
+$black: #000000; //Black
+$front__page_links: rgb(109, 110, 113);
+
+// Original Colors
+// $color__brand-1: #144734; // GREEN
+// $color__brand-2: #d9ccb4; // BEIGE
